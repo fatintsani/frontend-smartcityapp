@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Smart City Login</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+    :root {
+      --dark-green: #285430;
+      --white: #FFFFFF;
+      --soft-green: #5F8D4E;
+      --pastel-green: #A4BE7B;
+      --sand: #E5D9B6;
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <div class="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+
+    <!-- LEFT SIDE (Desktop: Image + Text) -->
+    <div class="flex flex-col justify-center items-center bg-[var(--pastel-green)] 
+                py-16 px-8 rounded-b-[40px] lg:rounded-none">
+
+      <img src="assets/img/room.png"
+           alt="Green Smart City"
+           class="w-60 md:w-72">
+
+      <h1 class="text-4xl md:text-5xl font-bold text-[var(--dark-green)] mt-6 text-center leading-tight">
+        Green Smart City
+      </h1>
+
+      <p class="text-[var(--soft-green)] italic mt-2 text-md md:text-lg text-center">
+        Automatic Integration
+      </p>
+
+      <p class="text-[var(--dark-green)] font-semibold text-center mt-1 text-sm md:text-base">
+        Future Starts From Your City
+      </p>
+    </div>
+
+
+    <!-- RIGHT SIDE (Login Form) -->
+    <div class="flex flex-col justify-center px-10 py-16">
+
+      <h2 class="text-3xl md:text-4xl font-bold text-[var(--dark-green)] text-center mb-2">
+        Log In
+      </h2>
+      <p class="text-[var(--dark-green)] mb-8 text-md md:text-sm text-center">
+        Welcome to Green Smart City Application, please log in to continue.
+      </p>
+
+      <!-- Username -->
+      <div class="flex items-center bg-[var(--soft-green)] text-white rounded-full px-5 py-4 mb-4">
+        <span class="material-icons mr-3">person</span>
+        <input type="text"
+               placeholder="Masukan Username Anda"
+               class="w-full bg-transparent placeholder-white outline-none">
+      </div>
+
+      <!-- Password -->
+      <div class="flex items-center bg-[var(--soft-green)] text-white rounded-full px-5 py-4">
+        <span class="material-icons mr-3">lock</span>
+        <input type="password"
+               placeholder="Masukan Password Anda"
+               class="w-full bg-transparent placeholder-white outline-none">
+      </div>
+
+      <!-- Options -->
+      <div class="flex justify-between items-center text-sm mt-4">
+        <label class="flex items-center text-[var(--dark-green)]">
+          <input type="checkbox" class="mr-2">
+          Remember me
+        </label>
+
+        <a href="forgot-password.html" class="text-[var(--dark-green)] hover:underline">
+          Forgot Password?
+        </a>
+      </div>
+
+      <!-- Button -->
+      <button class="w-full bg-[var(--pastel-green)] text-[var(--dark-green)]
+                     font-bold mt-8 py-4 rounded-full text-lg hover:bg-[var(--soft-green)]
+                     hover:text-white transition-all duration-200">
+        LOGIN
+      </button>
+    </div>
+  </div>
+
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</body>
+</html>

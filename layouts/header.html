@@ -1,0 +1,16 @@
+<!-- layouts/header.html -->
+<header
+  class="fixed top-0 left-0 w-full bg-[var(--dark-green)] text-white px-8 py-6 shadow-md z-40 rounded-bl-[50px] flex items-center justify-between"
+>
+  <h1 id="page-title" class="text-3xl font-semibold ms-4">Smart City App</h1>
+
+  <div class="w-12 h-12 bg-[var(--sand)] rounded-full flex items-center justify-center shadow-md">
+    <ion-icon name="person-outline" class="text-[var(--dark-green)] text-3xl"></ion-icon>
+  </div>
+</header>
+
+<script>
+  // Set title berdasarkan atribut data-title
+  const title = document.body.getAttribute("data-title");
+  if (title) document.getElementById("page-title").textContent = title;
+</script>

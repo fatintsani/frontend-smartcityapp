@@ -1,0 +1,56 @@
+<!-- layouts/sidebar.html -->
+<nav class="fixed left-0 top-0 h-full w-64 bg-[var(--soft-green)] text-white shadow-xl hidden lg:block">
+    <div class="p-6 text-2xl font-semibold">
+        Smart City App
+    </div>
+
+    <ul class="mt-8 space-y-2">
+
+        <li>
+            <a href="../pages/dashboard.html" data-page="dashboard"
+               class="side-link flex items-center gap-3 px-6 py-3 rounded-r-full transition">
+                <ion-icon name="home-outline" class="text-2xl"></ion-icon>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="../pages/smart.html" data-page="smart"
+               class="side-link flex items-center gap-3 px-6 py-3 rounded-r-full transition">
+                <ion-icon name="bulb-outline" class="text-2xl"></ion-icon>
+                <span>Smart</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="../pages/activity.html" data-page="activity"
+               class="side-link flex items-center gap-3 px-6 py-3 rounded-r-full transition">
+                <ion-icon name="bar-chart-outline" class="text-2xl"></ion-icon>
+                <span>Activity</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="../pages/notifications.html" data-page="notifications"
+               class="side-link flex items-center gap-3 px-6 py-3 rounded-r-full transition">
+                <ion-icon name="notifications-outline" class="text-2xl"></ion-icon>
+                <span>Notifications</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="../pages/settings.html" data-page="settings"
+               class="side-link flex items-center gap-3 px-6 py-3 rounded-r-full transition">
+                <ion-icon name="settings-outline" class="text-2xl"></ion-icon>
+                <span>Settings</span>
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+<style>
+    .active-side {
+        background-color: var(--soft-green) !important;
+    }
+</style>

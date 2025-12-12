@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart City Dashboard</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { font-family: "Poppins", sans-serif; }
+    :root {
+      --dark-green: #285430;
+      --white: #FFFFFF;
+      --soft-green: #5F8D4E;
+      --pastel-green: #A4BE7B;
+      --sand: #E5D9B6;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f5f5f5]">
+
+  <!-- ===================== DESKTOP SIDEBAR ===================== -->
+  <aside class="hidden lg:flex flex-col w-[260px] bg-[var(--soft-green)] text-white h-screen p-6 fixed">
+    <h1 class="text-2xl font-bold mb-8">Smart City App</h1>
+    
+    <nav class="flex flex-col gap-4">
+      <button class="nav-btn flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--pastel-green)] hover:text-[var(--dark-green)] transition active"
+              data-target="home">
+        <span class="material-icons">home</span> Home
+      </button>
+      <button class="nav-btn flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--pastel-green)] hover:text-[var(--dark-green)] transition"
+              data-target="activity">
+        <span class="material-icons">bar_chart</span> Activity
+      </button>
+      <button class="nav-btn flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--pastel-green)] hover:text-[var(--dark-green)] transition"
+              data-target="notif">
+        <span class="material-icons">notifications</span> Notifications
+      </button>
+      <button class="nav-btn flex items-center gap-3 p-3 rounded-lg hover:bg-[var(--pastel-green)] hover:text-[var(--dark-green)] transition"
+              data-target="settings">
+        <span class="material-icons">settings</span> Settings
+      </button>
+    </nav>
+  </aside>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="lg:ml-[260px] p-6">
+
+    <!-- HEADER -->
+    <header class="bg-[var(--soft-green)] px-6 py-4 rounded-2xl text-white flex justify-between items-center">
+      <h1 class="text-2xl font-semibold">Smart City App</h1>
+      <span class="material-icons text-3xl bg-[var(--pastel-green)] text-[var(--dark-green)] p-2 rounded-full">
+        person
+      </span>
+    </header>
+
+    <!-- CONTENT SECTIONS -->
+    <section id="home" class="content-section block mt-8">
+      <h2 class="text-3xl font-bold text-[var(--dark-green)]">Welcome to Smart City App!</h2>
+      <p class="text-[var(--soft-green)] mt-1 text-lg">Fatin Muflihuts Tsani</p>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-4 text-center text-[var(--dark-green)]">Smart Menu</h3>
+
+      <!-- Smart Menu Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        
+        <!-- Smart Home -->
+        <div class="bg-[var(--pastel-green)] p-5 rounded-2xl shadow-md text-center">
+          <span class="material-icons text-[var(--dark-green)] text-5xl">home</span>
+          <h4 class="font-semibold mt-3">Smart Home</h4>
+          <p class="text-sm">3/4 Fitur Active</p>
+          <button class="bg-[var(--soft-green)] text-white rounded-full px-4 py-1 mt-3">Start</button>
+        </div>
+
+        <!-- Smart Parking -->
+        <div class="bg-[var(--pastel-green)] p-5 rounded-2xl shadow-md text-center">
+          <span class="material-icons text-[var(--dark-green)] text-5xl">directions_car</span>
+          <h4 class="font-semibold mt-3">Smart Parking</h4>
+          <p class="text-sm">1/2 Fitur Active</p>
+          <button class="bg-[var(--soft-green)] text-white rounded-full px-4 py-1 mt-3">Start</button>
+        </div>
+
+        <!-- Smart Garden -->
+        <div class="bg-[var(--pastel-green)] p-5 rounded-2xl shadow-md text-center">
+          <span class="material-icons text-[var(--dark-green)] text-5xl">spa</span>
+          <h4 class="font-semibold mt-3">Smart Garden</h4>
+          <p class="text-sm">1/1 Fitur Active</p>
+          <button class="bg-[var(--soft-green)] text-white rounded-full px-4 py-1 mt-3">Start</button>
+        </div>
+
+      </div>
+
+      <!-- Featured Box -->
+      <div class="mt-10 bg-[var(--pastel-green)] p-6 rounded-2xl shadow-md flex items-center gap-6">
+        <span class="material-icons text-[var(--dark-green)] text-5xl">home</span>
+        <div>
+          <h4 class="font-semibold text-lg">Smart Home</h4>
+          <p class="text-sm">3/4 Fitur Active</p>
+          <button class="bg-[var(--soft-green)] text-white rounded-full px-4 py-1 mt-3">Start</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OTHER PAGES -->
+    <section id="activity" class="content-section hidden mt-8">
+      <h2 class="text-3xl font-bold text-[var(--dark-green)] mb-4">Activity</h2>
+      <p class="text-[var(--soft-green)]">Halaman aktivitas pengguna.</p>
+    </section>
+
+    <section id="notif" class="content-section hidden mt-8">
+      <h2 class="text-3xl font-bold text-[var(--dark-green)] mb-4">Notifications</h2>
+      <p class="text-[var(--soft-green)]">Tidak ada notifikasi baru.</p>
+    </section>
+
+    <section id="settings" class="content-section hidden mt-8">
+      <h2 class="text-3xl font-bold text-[var(--dark-green)] mb-4">Settings</h2>
+      <p class="text-[var(--soft-green)]">Pengaturan aplikasi Smart City.</p>
+    </section>
+
+  </main>
+
+  <!-- ===================== BOTTOM NAV (MOBILE) ===================== -->
+  <nav class="lg:hidden fixed bottom-0 w-full bg-[var(--soft-green)] text-[var(--sand)] py-3 rounded-t-2xl flex justify-around items-center">
+
+    <button class="mobile-btn flex flex-col items-center text-xs active" data-target="home">
+      <span class="material-icons text-3xl">home</span>
+      Home
+    </button>
+
+    <button class="mobile-btn flex flex-col items-center text-xs" data-target="activity">
+      <span class="material-icons text-3xl">bar_chart</span>
+      Activity
+    </button>
+
+    <button class="mobile-btn flex flex-col items-center text-xs" data-target="notif">
+      <span class="material-icons text-3xl">notifications</span>
+      Notif
+    </button>
+
+    <button class="mobile-btn flex flex-col items-center text-xs" data-target="settings">
+      <span class="material-icons text-3xl">settings</span>
+      Settings
+    </button>
+
+  </nav>
+
+  <!-- ===================== JAVASCRIPT ===================== -->
+  <script>
+    const navBtns = document.querySelectorAll(".nav-btn");
+    const mobileBtns = document.querySelectorAll(".mobile-btn");
+    const sections = document.querySelectorAll(".content-section");
+
+    function switchSection(target) {
+      sections.forEach(sec => sec.classList.add("hidden"));
+      document.getElementById(target).classList.remove("hidden");
+
+      navBtns.forEach(btn => btn.classList.remove("active", "bg-[var(--pastel-green)]", "text-[var(--dark-green)]"));
+      mobileBtns.forEach(btn => btn.classList.remove("active", "text-[var(--dark-green)]"));
+
+      document.querySelectorAll(`[data-target="${target}"]`)
+        .forEach(btn => btn.classList.add("active", "text-[var(--dark-green)]"));
+    }
+
+    navBtns.forEach(btn => btn.addEventListener("click", () => switchSection(btn.dataset.target)));
+    mobileBtns.forEach(btn => btn.addEventListener("click", () => switchSection(btn.dataset.target)));
+  </script>
+
+</body>
+</html>

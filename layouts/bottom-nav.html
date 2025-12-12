@@ -1,0 +1,43 @@
+<!-- layouts/bottom-nav.html -->
+<div class="fixed bottom-0 left-0 w-full bg-[var(--soft-green)] text-[var(--sand)]
+            flex justify-between items-center px-6 py-4 rounded-tl-[35px] rounded-tr-[35px]
+            shadow-lg lg:hidden">
+
+    <div class="flex gap-10">
+        <a href="../pages/smart.html" data-page="smart" class="bottom-link flex flex-col items-center">
+            <ion-icon name="bulb-outline" class="text-3xl"></ion-icon>
+            <span class="text-xs">Smart</span>
+        </a>
+
+        <a href="../pages/activity.html" data-page="activity" class="bottom-link flex flex-col items-center">
+            <ion-icon name="stats-chart-outline" class="text-3xl"></ion-icon>
+            <span class="text-xs">Activity</span>
+        </a>
+    </div>
+
+    <!-- Floating Home -->
+    <a href="../pages/dashboard.html" data-page="dashboard"
+       class="bottom-link absolute left-1/2 -translate-x-1/2 -top-6 bg-[var(--dark-green)] p-5 rounded-full shadow-xl">
+        <ion-icon name="home-outline" class="text-4xl text-[var(--sand)]"></ion-icon>
+    </a>
+
+    <div class="flex gap-10">
+        <a href="../pages/notifications.html" data-page="notifications" class="bottom-link flex flex-col items-center">
+            <ion-icon name="notifications-outline" class="text-3xl"></ion-icon>
+            <span class="text-xs">Alerts</span>
+        </a>
+
+        <a href="../pages/settings.html" data-page="settings" class="bottom-link flex flex-col items-center">
+            <ion-icon name="settings-outline" class="text-3xl"></ion-icon>
+            <span class="text-xs">Settings</span>
+        </a>
+    </div>
+</div>
+
+<style>
+    .active-bottom ion-icon,
+    .active-bottom span {
+        color: var(--dark-green) !important;
+        font-weight: 600;
+    }
+</style>
